@@ -6,23 +6,23 @@
 
 
 #### Install
-```
+```bash
 $ git clone https://github.com/davidlatwe/rez-gitz.git
 $ cd rez-gitz
 $ rez build --install
 ```
 
 #### Usage
-```
+```bash
 $ rez-env gitz -- clone https://github.com/mottosso/rez-pipz.git --install
 ```
 equivalent
-```
+```bash
 $ rez-env gitz
 > $ clone https://github.com/mottosso/rez-pipz.git --install
 ```
 You may clone specific branch
-```
+```bash
 > $ clone https://github.com/mottosso/rez-pipz.git --install --branch=dev
 ``` 
 
