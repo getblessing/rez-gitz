@@ -45,16 +45,16 @@ def build(source_path, build_path, install_path, targets=None):
         shutil.rmtree(build_dir)
     os.makedirs(build_dir)
 
-    gitz_dir = os.path.join(source_path, "src", "gitz")
-    bin_dir = os.path.join(source_path, "src", "bin")
+    py_dir = os.path.join(source_path, "gitz")
+    bin_dir = os.path.join(source_path, "bin")
 
-    gitz_dir_b = os.path.join(build_dir, "gitz")
+    py_dir_b = os.path.join(build_dir, "gitz")
     bin_dir_b = os.path.join(build_dir, "bin")
 
-    copy(gitz_dir, gitz_dir_b)
+    copy(py_dir, py_dir_b)
     copy(bin_dir, bin_dir_b)
 
-    write_version(source_path, gitz_dir_b)
+    write_version(source_path, py_dir_b)
 
     if "install" in targets:
         if os.path.isdir(install_dir):

@@ -5,7 +5,7 @@ description = "Install Rez packages via git clone."
 
 authors = ["davidlatwe"]
 
-version = "0.1.0"
+version = "0.1.1"
 
 requires = [
     "rez-2.29+",
@@ -20,4 +20,4 @@ build_command = "python {root}/rezbuild.py {install}"
 
 def commands():
     env.PATH.prepend("{root}/payload/bin")
-    env.PYTHONPATH.prepend("{root}/payload/gitz")
+    env.PYTHONPATH.prepend("{root}/payload")
