@@ -20,4 +20,4 @@ build_command = "python {root}/rezbuild.py {install}"
 
 def commands():
     env.PATH.prepend("{root}/payload/bin")
-    env.PYTHONPATH.prepend("{root}/payload/python")
+    env.PYTHONPATH.prepend("{root}/payload/gitz")
