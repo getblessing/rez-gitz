@@ -34,7 +34,7 @@ def main(argv=None):
         help="Git repository URL")
     parser.add_argument(
         "--branch",
-        help="Install the package")
+        help="Clone on specific branch")
     parser.add_argument(
         "--install", action="store_true",
         help="Install the package")
