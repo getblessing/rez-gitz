@@ -21,3 +21,15 @@ equivalent
 $ rez-env gitz
 > $ clone https://github.com/mottosso/rez-pipz.git --install
 ```
+You may clone specific branch
+```
+> $ clone https://github.com/mottosso/rez-pipz.git --install --branch=dev
+``` 
+
+#### Notice
+
+* `gitz` will append breadcrumb attributes into cloned package:
+    ```python
+    gitz = True
+    gitz_from_branch = "branch-name"
+    ```
