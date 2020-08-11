@@ -5,7 +5,7 @@ import logging
 import subprocess
 
 
-PY3 = sys.version_info[0]
+PY3 = sys.version_info[0] == 3
 log = logging.getLogger("gitz")
 
 
