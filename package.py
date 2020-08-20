@@ -5,7 +5,7 @@ description = "Install Rez packages via git clone."
 
 authors = ["davidlatwe"]
 
-version = "0.1.2"
+version = "1.0.0"
 
 requires = [
     "rez-2.29+",
